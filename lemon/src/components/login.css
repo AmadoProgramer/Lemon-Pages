@@ -1,0 +1,53 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 82);
+    margin-top: 20%;
+    margin-left: 32%;
+    padding: 2rem;
+    border-radius: 2em;
+    box-shadow: 0 10px 25 px rgba(0, 0, 0,0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.inicio{
+    padding: 2rem;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.15);
+    transition: box-shadow 0.3s ease;
+}
+.datos:focus {
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.25);
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius:8px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    }
+    button:hover{
+        background-color: rgb(5, 5, 99);
+    }
