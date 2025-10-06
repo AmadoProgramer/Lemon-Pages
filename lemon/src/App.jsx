@@ -1,16 +1,17 @@
 import { useState } from "react";
-import Bienvenido from "./components/Bienvenido.jsx";
 import { Login } from "./components/Login.jsx";
+import Bienvenido from "./components/Home.jsx";
 
 function App() {
-  const [user, setUser] = useState("")
+  const [user, setUser] = useState("");
+
   return (
     <>
-    {
-      user.length === 0
-      ?<Login setUser={setUser}/>
-      : <Bienvenido user={user} setUser={setUser}/>
-    }
+      {user.length === 0 ? (
+        <Login setUser={setUser} />
+      ) : (
+        <Bienvenido user={user} setUser={setUser} />
+      )}
     </>
   );
 }
