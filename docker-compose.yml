@@ -1,7 +1,7 @@
-version: "3.9"
+
 services:
   backend:
-    build: .
+    build: ./backend
     container_name: lemon-backend
     restart: unless-stopped
     env_file: .env
@@ -10,8 +10,8 @@ services:
     depends_on:
       - db
     volumes:
-      - ./:/usr/src/app
-      - node_modules:/usr/src/app/node_modules
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules
     command: npm run dev
 
   db:
